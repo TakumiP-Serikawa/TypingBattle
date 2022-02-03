@@ -26,3 +26,4 @@ C:\Users\takum\Documents\GitHubActionsTest\GitHubActionsTest\GitHubActions\obj\D
 C:\Users\takum\Documents\GitHubActionsTest\GitHubActionsTest\GitHubActions\obj\Debug\net6.0\ref\GitHubActions.dll
 C:\Users\takum\Documents\GitHubActionsTest\GitHubActionsTest\GitHubActions\obj\Debug\net6.0\GitHubActions.pdb
 C:\Users\takum\Documents\GitHubActionsTest\GitHubActionsTest\GitHubActions\obj\Debug\net6.0\GitHubActions.genruntimeconfig.cache
+C:\Users\takum\Documents\GitHubActionsTest\GitHubActionsTest\GitHubActions\obj\Debug\net6.0\GitHubActions.csproj.AssemblyReference.cache

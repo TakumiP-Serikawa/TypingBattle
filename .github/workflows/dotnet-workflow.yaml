@@ -18,9 +18,9 @@ jobs:
           dotnet-version: ${{ matrix.dotnet-version }}
       # - name: Display dotnet version
       #   run: dotnet --version
-      # - name: Install dependencies
-      #   run: dotnet restore
+      - name: Install dependencies
+        run: dotnet restore GitHubActions.sln
       - name: Build
-        run: dotnet build --configuration Release --no-restore
+        run: dotnet build GitHubActions.sln --configuration Release --no-restore
       - name: Test
-        run: dotnet test --no-restore --verbosity normal
+        run: dotnet test GitHubActions.sln --no-restore --verbosity normal
