@@ -1,25 +1,33 @@
 name: .NET
-
+# このワークフローを実行するタイミングを書く
 on:
+  # これであればmasterブランチにpushされた時
   push:
     branches: [ master ]
+  # こちらはプルリクエストが作られた時
   pull_request:
     branches: [ master ]
 
+# 実行する内容
 jobs:
   build:
-
+    # ubuntuの最新バージョンで動かす。
     runs-on: ubuntu-latest
 
     steps:
+    # チェック仮想環境にリポジトリをチェックアウトする
     - uses: actions/checkout@v2
+    # .Netのセットアップをする
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 6.0.x
+    # nugetで参照しているファイル等を取得する
     - name: Restore dependencies
       run: dotnet restore
+    # ビルド実行
     - name: Build
       run: dotnet build --no-restore
+    # テスト実行
     - name: Test
       run: dotnet test --no-build --verbosity normal
