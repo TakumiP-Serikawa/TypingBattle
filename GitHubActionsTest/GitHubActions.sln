@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GitHubActions", "GitHubActionsTest\GitHubActions.csproj", "{C45413E2-1BAA-4E64-9C65-4D9BDC3507A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GitHubActions", "GitHubActions\GitHubActions.csproj", "{C45413E2-1BAA-4E64-9C65-4D9BDC3507A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitHubActionsTest", "GitHubActionsdTest\GitHubActionsTest.csproj", "{CDBE119A-EE84-4EE7-922D-34C979654476}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitHubActionsTest", "GitHubActionsTest\GitHubActionsTest.csproj", "{CDBE119A-EE84-4EE7-922D-34C979654476}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

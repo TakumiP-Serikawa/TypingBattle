@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YEp5mlmuhVcCMs2iSHseZAPGEe6EYFubBIN61Zt4bOfvnSEP5N5h/kJRiFZCmPA4Ieq0T3xeN3PZMqOAywBIVA==",
+  "dgSpecHash": "eRE4j1J6lRtxJxayeEYuN5H0sqgC6ELSGybm39U4ivnl4UqoEXLxZcQSF17V7LhpvDbiTGx//uCFIjN/mB43Rg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\takum\\source\\repos\\GitHubActionsTest\\GitHubActionsdTest\\GitHubActionsTest.csproj",
+  "projectFilePath": "C:\\Users\\takum\\Documents\\GitHubActionsTest\\GitHubActionsTest\\GitHubActionsTest\\GitHubActionsTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\takum\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
     "C:\\Users\\takum\\.nuget\\packages\\microsoft.codecoverage\\16.11.0\\microsoft.codecoverage.16.11.0.nupkg.sha512",

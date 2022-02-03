@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\takum\\source\\repos\\GitHubActionsTest\\GitHubActionsTest\\GitHubActions.csproj",
+      "projectUniqueName": "C:\\Users\\takum\\Documents\\GitHubActionsTest\\GitHubActionsTest\\GitHubActions\\GitHubActions.csproj",
       "projectName": "GitHubActions",
-      "projectPath": "C:\\Users\\takum\\source\\repos\\GitHubActionsTest\\GitHubActionsTest\\GitHubActions.csproj",
+      "projectPath": "C:\\Users\\takum\\Documents\\GitHubActionsTest\\GitHubActionsTest\\GitHubActions\\GitHubActions.csproj",
       "packagesPath": "C:\\Users\\takum\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\takum\\source\\repos\\GitHubActionsTest\\GitHubActionsTest\\obj\\",
+      "outputPath": "C:\\Users\\takum\\Documents\\GitHubActionsTest\\GitHubActionsTest\\GitHubActions\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\takum\\AppData\\Roaming\\NuGet\\NuGet.Config",

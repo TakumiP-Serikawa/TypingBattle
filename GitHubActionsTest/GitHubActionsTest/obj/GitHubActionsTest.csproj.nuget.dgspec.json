@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\takum\\source\\repos\\GitHubActionsTest\\GitHubActionsdTest\\GitHubActionsTest.csproj": {}
+    "C:\\Users\\takum\\Documents\\GitHubActionsTest\\GitHubActionsTest\\GitHubActionsTest\\GitHubActionsTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\takum\\source\\repos\\GitHubActionsTest\\GitHubActionsdTest\\GitHubActionsTest.csproj": {
+    "C:\\Users\\takum\\Documents\\GitHubActionsTest\\GitHubActionsTest\\GitHubActionsTest\\GitHubActionsTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\takum\\source\\repos\\GitHubActionsTest\\GitHubActionsdTest\\GitHubActionsTest.csproj",
+        "projectUniqueName": "C:\\Users\\takum\\Documents\\GitHubActionsTest\\GitHubActionsTest\\GitHubActionsTest\\GitHubActionsTest.csproj",
         "projectName": "GitHubActionsTest",
-        "projectPath": "C:\\Users\\takum\\source\\repos\\GitHubActionsTest\\GitHubActionsdTest\\GitHubActionsTest.csproj",
+        "projectPath": "C:\\Users\\takum\\Documents\\GitHubActionsTest\\GitHubActionsTest\\GitHubActionsTest\\GitHubActionsTest.csproj",
         "packagesPath": "C:\\Users\\takum\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\takum\\source\\repos\\GitHubActionsTest\\GitHubActionsdTest\\obj\\",
+        "outputPath": "C:\\Users\\takum\\Documents\\GitHubActionsTest\\GitHubActionsTest\\GitHubActionsTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\takum\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,8 +29,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\takum\\source\\repos\\GitHubActionsTest\\GitHubActionsTest\\GitHubActions.csproj": {
-                "projectPath": "C:\\Users\\takum\\source\\repos\\GitHubActionsTest\\GitHubActionsTest\\GitHubActions.csproj"
+              "C:\\Users\\takum\\Documents\\GitHubActionsTest\\GitHubActionsTest\\GitHubActions\\GitHubActions.csproj": {
+                "projectPath": "C:\\Users\\takum\\Documents\\GitHubActionsTest\\GitHubActionsTest\\GitHubActions\\GitHubActions.csproj"
               }
             }
           }
@@ -81,14 +81,14 @@
         }
       }
     },
-    "C:\\Users\\takum\\source\\repos\\GitHubActionsTest\\GitHubActionsTest\\GitHubActions.csproj": {
+    "C:\\Users\\takum\\Documents\\GitHubActionsTest\\GitHubActionsTest\\GitHubActions\\GitHubActions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\takum\\source\\repos\\GitHubActionsTest\\GitHubActionsTest\\GitHubActions.csproj",
+        "projectUniqueName": "C:\\Users\\takum\\Documents\\GitHubActionsTest\\GitHubActionsTest\\GitHubActions\\GitHubActions.csproj",
         "projectName": "GitHubActions",
-        "projectPath": "C:\\Users\\takum\\source\\repos\\GitHubActionsTest\\GitHubActionsTest\\GitHubActions.csproj",
+        "projectPath": "C:\\Users\\takum\\Documents\\GitHubActionsTest\\GitHubActionsTest\\GitHubActions\\GitHubActions.csproj",
         "packagesPath": "C:\\Users\\takum\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\takum\\source\\repos\\GitHubActionsTest\\GitHubActionsTest\\obj\\",
+        "outputPath": "C:\\Users\\takum\\Documents\\GitHubActionsTest\\GitHubActionsTest\\GitHubActions\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\takum\\AppData\\Roaming\\NuGet\\NuGet.Config",

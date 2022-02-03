@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gPe65VRCndLfc2NB2mnSQ4NSz+fWKVI7P4CNE9WU/YwPOrrHNwsAFaLhnr153TmfaRVj+1J9HaiIECBJx6Advw==",
+  "dgSpecHash": "/7gtCmOi05j5x7kwF+rubZzJzGAjZ5aEXHMXF6LsTpjf3oPXR+ud5TxvG15bIDYkOFoUTvNUKFW87VaRWDTmQQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\takum\\source\\repos\\GitHubActionsTest\\GitHubActionsTest\\GitHubActions.csproj",
+  "projectFilePath": "C:\\Users\\takum\\Documents\\GitHubActionsTest\\GitHubActionsTest\\GitHubActions\\GitHubActions.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
