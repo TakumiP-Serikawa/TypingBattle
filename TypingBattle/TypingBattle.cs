@@ -14,8 +14,8 @@ public class TypingBattle
             IEnumerable<Enemy>? enemies = Enemy.Enemies(enemyCount);
             foreach (Enemy? enemy in enemies)
             {
-                Console.WriteLine(enemy.Name);
-                Console.WriteLine(enemy.HP);
+                Console.WriteLine("敵:" + enemy.Name);
+                Console.WriteLine("HP:" + enemy.HP);
                 while (enemy.HP > 0)
                 {
                     string? action = Console.ReadLine();
@@ -30,7 +30,7 @@ public class TypingBattle
                         default:
                             break;
                     }
-                    Console.WriteLine(enemy.HP);
+                    Console.WriteLine("HP:" + enemy.HP);
                 }
                 Console.WriteLine("倒した！");
             }
