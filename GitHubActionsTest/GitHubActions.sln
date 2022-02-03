@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GitHubActions", "GitHubActionsTest\GitHubActions.csproj", "{C45413E2-1BAA-4E64-9C65-4D9BDC3507A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitHubActionsTest", "GitHubActionsdTest\GitHubActionsTest.csproj", "{CDBE119A-EE84-4EE7-922D-34C979654476}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C45413E2-1BAA-4E64-9C65-4D9BDC3507A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C45413E2-1BAA-4E64-9C65-4D9BDC3507A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C45413E2-1BAA-4E64-9C65-4D9BDC3507A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C45413E2-1BAA-4E64-9C65-4D9BDC3507A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDBE119A-EE84-4EE7-922D-34C979654476}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDBE119A-EE84-4EE7-922D-34C979654476}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDBE119A-EE84-4EE7-922D-34C979654476}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDBE119A-EE84-4EE7-922D-34C979654476}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8346E6CC-2F6C-49F9-A0DE-6B88D07E23DF}
+	EndGlobalSection
+EndGlobal
