@@ -72,7 +72,7 @@ public class Enemy
             yield return new Enemy
             {
                 Name = MakeRandomName(),
-                HP = hp += 10
+                HP = hp += 9
             };
         }
     }
