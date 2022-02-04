@@ -22,6 +22,8 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 6.0.x
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v1
     # nugetで参照しているファイル等を取得する
     - name: Restore dependencies
       run: dotnet restore
