@@ -87,8 +87,8 @@ public class Enemy
             charsarr[i] = characters[random.Next(characters.Length)];
         }
 
-        string? resultString = new string(charsarr);
-        return resultString;
+        // 👇 Telc.BasicExtension の機能を使う
+        return charsarr.ToJoinedString("");
     }
 }
 
