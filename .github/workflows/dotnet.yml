@@ -23,7 +23,7 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Setup NuGet
-      uses: NuGet/setup-nuget@v1
+      uses: dotnet add package Newtonsoft.json
     # nugetで参照しているファイル等を取得する
     - name: Restore dependencies
       run: dotnet restore
