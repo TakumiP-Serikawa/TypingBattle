@@ -23,7 +23,7 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Setup NuGet
-      run: dotnet add TypingBattle.csproj package Newtonsoft.json
+      run: dotnet add /home/runner/work/TypingBattle/TypingBattle/TypingBattle.csproj package Newtonsoft.json
     # nugetで参照しているファイル等を取得する
     - name: Restore dependencies
       run: dotnet restore
