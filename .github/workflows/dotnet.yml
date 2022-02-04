@@ -23,10 +23,7 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Setup NuGet
-      run: dotnet add /home/runner/work/TypingBattle/TypingBattle/TypingBattle.csproj package Newtonsoft.json
-    # nugetで参照しているファイル等を取得する
-    - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore --source https://nuget.pkg.github.com/Tanaka-Electric/index.json --source dotnet restore --source https://nuget.pkg.github.com/Tanaka-Electric/index.json
     # ビルド実行
     - name: Build
       run: dotnet build --no-restore
