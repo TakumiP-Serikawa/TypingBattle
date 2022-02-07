@@ -25,7 +25,7 @@ jobs:
     - name: Setup NuGet
       run: dotnet nuget add source --username TakumiP-Serikawa --password ${{ secrets.GITHUB_TOKEN }} --name Telc --store-password-in-clear-text "https://nuget.pkg.github.com/Tanaka-Electric/index.json"
     - name: add Telc.BasicExtension
-      run: dotnet add package Telc.BasicExtension
+      run: dotnet add /home/runner/work/TypingBattle/TypingBattle/TypingBattle/TypingBattle.csproj package Telc.BasicExtension
     - name: restore
       run: dotnet restore
     # ビルド実行
