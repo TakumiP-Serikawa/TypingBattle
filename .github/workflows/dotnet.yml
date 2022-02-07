@@ -22,12 +22,12 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 6.0.x
-    - name: Setup NuGet
-      run: dotnet nuget add source --username TakumiP-Serikawa --password ${{ secrets.GITHUB_TOKEN }} --name Telc --store-password-in-clear-text "https://nuget.pkg.github.com/Tanaka-Electric/index.json"
+    # - name: Setup NuGet
+    #   run: dotnet nuget add source --username TakumiP-Serikawa --password ${{ secrets.GITHUB_TOKEN }} --name Telc --store-password-in-clear-text "https://nuget.pkg.github.com/Tanaka-Electric/index.json"
     - name: add Newtonsoft.json
       run: dotnet add /home/runner/work/TypingBattle/TypingBattle/TypingBattle/TypingBattle.csproj package Newtonsoft.json
-    - name: add Telc.BasicExtension
-      run: dotnet add /home/runner/work/TypingBattle/TypingBattle/TypingBattle/TypingBattle.csproj package telc.basicextension -v 2.2.0
+    # - name: add Telc.BasicExtension
+    #   run: dotnet add /home/runner/work/TypingBattle/TypingBattle/TypingBattle/TypingBattle.csproj package telc.basicextension -v 2.2.0
     - name: restore
       run: dotnet restore
     # ビルド実行

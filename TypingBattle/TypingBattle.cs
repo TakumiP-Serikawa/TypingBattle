@@ -88,7 +88,9 @@ public class Enemy
         }
 
         // 👇 Telc.BasicExtension の機能を使う
-        return charsarr.ToJoinedString("");
+        //return charsarr.ToJoinedString("");
+        if (charsarr == null) return "";
+        return charsarr.ToString();
     }
 }
 
