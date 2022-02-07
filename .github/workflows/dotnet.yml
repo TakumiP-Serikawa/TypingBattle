@@ -26,7 +26,7 @@ jobs:
       uses: NuGet/setup-nuget@v1.0.5
 
     - name: Add Telc
-      run: nuget source Add -Name Telc -username TakumiP-Serikawa -password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text https://nuget.pkg.github.com/Tanaka-Electric/index.json
+      run: nuget source Add -Name Telc -username TakumiP-Serikawa -password ${{ secrets.GITHUB_TOKEN }} -store-password-in-clear-text https://nuget.pkg.github.com/Tanaka-Electric/index.json
     #   run: dotnet nuget add source --username TakumiP-Serikawa --password ${{ secrets.GITHUB_TOKEN }} --name Telc --store-password-in-clear-text https://nuget.pkg.github.com/Tanaka-Electric/index.json
     # # - name: add Newtonsoft.json
     # #   run: dotnet add /home/runner/work/TypingBattle/TypingBattle/TypingBattle/TypingBattle.csproj package Newtonsoft.json
