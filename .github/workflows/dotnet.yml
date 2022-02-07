@@ -24,8 +24,8 @@ jobs:
         dotnet-version: 6.0.x
     - name: Setup NuGet
       run: dotnet nuget add source --username TakumiP-Serikawa --password ${{ secrets.GITHUB_TOKEN }} --name Telc --store-password-in-clear-text "https://nuget.pkg.github.com/Tanaka-Electric/index.json"
-    - name: Restore Nuget
-      run: dotnet restore --source Telc
+    - name: Restore NuGet
+      run: dotnet restore
     # ビルド実行
     - name: Build
       run: dotnet build --no-restore
