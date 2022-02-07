@@ -24,7 +24,7 @@ jobs:
         dotnet-version: 6.0.x
     - name: Setup NuGet
       # run: dotnet restore --source https://nuget.pkg.github.com/Tanaka-Electric/index.json
-      run: dotnet nuget add source --username TakumiP-Serikawa --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/Tanaka-Electric/index.json"
+      run: dotnet nuget add source --username TakumiP-Serikawa --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name Telc.BasicExtension "https://nuget.pkg.github.com/Tanaka-Electric/index.json"
     - name: Restore NuGet
       run: dotnet restore
     # ビルド実行
