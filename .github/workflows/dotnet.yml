@@ -27,7 +27,7 @@ jobs:
     # - name: add Newtonsoft.json
     #   run: dotnet add /home/runner/work/TypingBattle/TypingBattle/TypingBattle/TypingBattle.csproj package Newtonsoft.json
     - name: Add Telc.BasicExtension
-      run: dotnet add /home/runner/work/TypingBattle/TypingBattle/TypingBattle/TypingBattle.csproj package BasicExtension -s /home/runner/.dotnet/Telc -v 2.2.0
+      run: dotnet add /home/runner/work/TypingBattle/TypingBattle/TypingBattle/TypingBattle.csproj package Telc.BasicExtension -s /home/runner/.dotnet/Telc -v 2.2.0
     - name: restore
       run: dotnet restore
     # ビルド実行
