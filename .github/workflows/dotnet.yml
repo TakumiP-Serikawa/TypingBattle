@@ -24,17 +24,12 @@ jobs:
         dotnet-version: 6.0.x
     - name: Setup NuGet.exe for use with actions
       uses: NuGet/setup-nuget@v1.0.5
-
     - name: Add Telc
-      run: nuget sources Add -Name Telc -source https://nuget.pkg.github.com/Tanaka-Electric/index.json -UserName TakumiP-Serikawa -Password ${{ secrets.ForAccessPackage }} -storepasswordincleartext 
-    #   run: dotnet nuget add source --username TakumiP-Serikawa --password ${{ secrets.GITHUB_TOKEN }} --name Telc --store-password-in-clear-text https://nuget.pkg.github.com/Tanaka-Electric/index.json
-    # # - name: add Newtonsoft.json
-    # #   run: dotnet add /home/runner/work/TypingBattle/TypingBattle/TypingBattle/TypingBattle.csproj package Newtonsoft.json
-    - name: Add Telc.BasicExtension
-      run: nuget install Telc.BasicExtension -Version 2.2.0
-    #   run: dotnet add /home/runner/work/TypingBattle/TypingBattle/TypingBattle/TypingBattle.csproj package Telc.BasicExtension -s https://nuget.pkg.github.com/Tanaka-Electric/index.json -v 2.2.0
+      run: nuget sources Add -Name Telc -source "https://nuget.pkg.github.com/Tanaka-Electric/index.json" -UserName TakumiP-Serikawa -Password ${{ secrets.ForAccessPackage }} -storepasswordincleartext 
     - name: restore
-      run: dotnet restore
+      run: dotnet restore -s Telc
+    - name: restore
+      run: 
     # ビルド実行
     - name: Build
       run: dotnet build --no-restore
