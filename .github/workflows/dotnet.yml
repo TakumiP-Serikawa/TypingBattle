@@ -7,6 +7,10 @@ on:
   # こちらはプルリクエストが作られた時
   pull_request:
     branches: [ master ]
+env:
+  NuGetSourceUrl: https://api.nuget.org/v3/index.json
+  TelcSourceUrl: https://nuget.pkg.github.com/Tanaka-Electric/index.json
+
 
 # 実行する内容
 jobs:
@@ -22,12 +26,18 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 6.0.x
+    # NuGet.exeのセットアップをする
     - name: Setup NuGet.exe for use with actions
       uses: NuGet/setup-nuget@v1.0.5
-    - name: Add Telc
-      run: nuget sources Add -Name Telc -source "https://nuget.pkg.github.com/Tanaka-Electric/index.json" -UserName TakumiP-Serikawa -Password ${{ secrets.ForAccessPackage }} -storepasswordincleartext 
+    # NuGetパッケージソースにTelcを追加する
+    - name: Add Telc NuGet Package Source
+      run: nuget sources Add -Name Telc -source "${{ env.TelcSourceUrl }}" -UserName TakumiP-Serikawa -Password ${{ secrets.ForAccessPackage }} -storepasswordincleartext 
+    # レストア実行
     - name: restore
-      run: nuget restore -Source "https://api.nuget.org/v3/index.json;https://nuget.pkg.github.com/Tanaka-Electric/index.json"
+      # ソースを指定してレストアする
+      # NuGet標準ソース：https://api.nuget.org/v3/index.json
+      # Telcソース：https://nuget.pkg.github.com/Tanaka-Electric/index.json
+      run: nuget restore -Source "${{ env.NuGetSourceUrl }};${{ env.TelcSourceUrl }}"
     # ビルド実行
     - name: Build
       run: dotnet build --no-restore
