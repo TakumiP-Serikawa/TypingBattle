@@ -1,4 +1,5 @@
 name: .NET
+
 # このワークフローを実行するタイミングを書く
 on:
   # これであればmasterブランチにpushされた時
@@ -8,9 +9,9 @@ on:
   pull_request:
     branches: [ master ]
 env:
+  GitHubUserName: TakumiP-Serikawa
   NuGetSourceUrl: https://api.nuget.org/v3/index.json
   TelcSourceUrl: https://nuget.pkg.github.com/Tanaka-Electric/index.json
-
 
 # 実行する内容
 jobs:
@@ -31,12 +32,10 @@ jobs:
       uses: NuGet/setup-nuget@v1.0.5
     # NuGetパッケージソースにTelcを追加する
     - name: Add Telc NuGet Package Source
-      run: nuget sources Add -Name Telc -source "${{ env.TelcSourceUrl }}" -UserName TakumiP-Serikawa -Password ${{ secrets.ForAccessPackage }} -storepasswordincleartext 
+      run: nuget sources Add -Name Telc -source "${{ env.TelcSourceUrl }}" -UserName ${{ env.GitHubUserName }} -Password ${{ secrets.ForAccessPackage }} -storepasswordincleartext 
     # レストア実行
-    - name: restore
+    - name: Restore
       # ソースを指定してレストアする
-      # NuGet標準ソース：https://api.nuget.org/v3/index.json
-      # Telcソース：https://nuget.pkg.github.com/Tanaka-Electric/index.json
       run: nuget restore -Source "${{ env.NuGetSourceUrl }};${{ env.TelcSourceUrl }}"
     # ビルド実行
     - name: Build
