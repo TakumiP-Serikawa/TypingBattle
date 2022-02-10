@@ -34,12 +34,12 @@ jobs:
     - name: Add Telc NuGet Package Source
       run: nuget sources Add -Name Telc -source "${{ env.TelcSourceUrl }}" -UserName ${{ env.GitHubUserName }} -Password ${{ secrets.ForAccessPackage }} -storepasswordincleartext 
     # レストア実行
-    - name: Restore
-      # ソースを指定してレストアする
-      run: nuget restore -Source "${{ env.NuGetSourceUrl }};${{ env.TelcSourceUrl }}"
+    # - name: Restore
+    #   # ソースを指定してレストアする
+    #   run: nuget restore -Source "${{ env.NuGetSourceUrl }};${{ env.TelcSourceUrl }}"
     # ビルド実行
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build -s "${{ env.NuGetSourceUrl }};${{ env.TelcSourceUrl }}"
     # テスト実行
     - name: Test
       run: dotnet test --no-build --verbosity normal
