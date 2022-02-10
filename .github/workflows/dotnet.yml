@@ -27,12 +27,9 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 6.0.x
-    # NuGet.exeのセットアップをする
-    - name: Setup NuGet.exe for use with actions
-      uses: NuGet/setup-nuget@v1.0.5
     # NuGetパッケージソースにTelcを追加する
     - name: Add Telc NuGet Package Source
-      run: nuget sources Add -Name Telc -source "${{ env.TelcSourceUrl }}" -UserName ${{ env.GitHubUserName }} -Password ${{ secrets.ForAccessPackage }} -storepasswordincleartext 
+      run: dotnet nuget add source "${{ env.TelcSourceUrl }}" --name Telc  --username ${{ env.GitHubUserName }} --password ${{ secrets.ForAccessPackage }} --store-password-in-clear-text 
     # レストア実行
     # - name: Restore
     #   # ソースを指定してレストアする
