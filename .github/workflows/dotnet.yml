@@ -39,7 +39,7 @@ jobs:
     #   run: nuget restore -Source "${{ env.NuGetSourceUrl }};${{ env.TelcSourceUrl }}"
     # ビルド実行
     - name: Build
-      run: dotnet build -s "${{ env.NuGetSourceUrl }};${{ env.TelcSourceUrl }}"
+      run: dotnet build --source "${{ env.NuGetSourceUrl }};${{ env.TelcSourceUrl }}"
     # テスト実行
     - name: Test
       run: dotnet test --no-build --verbosity normal
