@@ -27,7 +27,7 @@ jobs:
     - name: Add Telc
       run: nuget sources Add -Name Telc -source "https://nuget.pkg.github.com/Tanaka-Electric/index.json" -UserName TakumiP-Serikawa -Password ${{ secrets.ForAccessPackage }} -storepasswordincleartext 
     - name: restore
-      run: nuget restore -Source https://api.nuget.org/v3/index.json;https://nuget.pkg.github.com/Tanaka-Electric/index.json;
+      run: nuget restore -Source "https://api.nuget.org/v3/index.json;https://nuget.pkg.github.com/Tanaka-Electric/index.json"
     # ビルド実行
     - name: Build
       run: dotnet build --no-restore
